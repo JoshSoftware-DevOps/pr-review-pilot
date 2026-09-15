@@ -14,5 +14,11 @@ def get_user(user_id):
         return jsonify({"error": "not found"}), 404
     return jsonify(user)
 
+@app.route("/users/search")
+def search_users():
+    query = request.args.get("name")
+    result = [u for u in users.values() if query in u["name"]]
+    return jsonify(result)
+
 if __name__ == "__main__":
     app.run(debug=True)
