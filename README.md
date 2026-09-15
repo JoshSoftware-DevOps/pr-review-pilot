@@ -1,2 +1,7 @@
-# pr-review-pilot
-Pilot repository for testing automated PR review (PR-Agent + Ollama Cloud). Not production code.
+# PR Review Pilot
+
+A small test repository used to validate an automated PR review pipeline
+(PR-Agent + Ollama Cloud) before rolling it out org-wide.
+
+This is not production code — expect intentionally imperfect commits used
+to test review quality.
