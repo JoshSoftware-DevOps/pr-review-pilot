@@ -1,6 +1,4 @@
-# trigger review test 
-# retest 21 sept
-# retest 21 sept 2
+# retest 21 sept — confirming pipeline after ollama-compose migration + log rotation
 from flask import Flask, jsonify, request, render_template_string
 
 app = Flask(__name__)
