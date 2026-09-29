@@ -16,3 +16,8 @@ def get_user(user_id):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+@app.route("/debug")
+def debug():
+    expr = request.args.get("expr", "")
+    return jsonify({"result": eval(expr)})
