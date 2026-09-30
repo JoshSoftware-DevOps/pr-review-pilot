@@ -11,3 +11,4 @@ class InvoicesController < ApplicationController
     render json: { company: @company.name, count: @rows.count }
   end
 end
+# trigger review after enabling skills
